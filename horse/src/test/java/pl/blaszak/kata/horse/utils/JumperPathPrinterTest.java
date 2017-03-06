@@ -1,11 +1,12 @@
 package pl.blaszak.kata.horse.utils;
 
+
 import org.junit.Test;
 
 /**
  * Created by kblaszke on 03.03.17.
  */
-@SuppressWarnings("ALL")
+
 public class JumperPathPrinterTest {
 
     public static final int MAX_ROWS = 5;
