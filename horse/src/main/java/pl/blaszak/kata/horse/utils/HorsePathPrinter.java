@@ -4,7 +4,7 @@ package pl.blaszak.kata.horse.utils;
  * Created by kblaszke on 03.03.17.
  */
 @SuppressWarnings("ALL")
-public class JumperPathPrinter {
+public class HorsePathPrinter {
 
     private static final int CHAR_PREFIX = 65;
 

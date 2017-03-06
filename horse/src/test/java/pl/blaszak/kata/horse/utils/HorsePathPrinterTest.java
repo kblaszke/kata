@@ -7,7 +7,7 @@ import org.junit.Test;
  * Created by kblaszke on 03.03.17.
  */
 
-public class JumperPathPrinterTest {
+public class HorsePathPrinterTest {
 
     public static final int MAX_ROWS = 5;
     public static final int MAX_COLS = 5;
@@ -17,7 +17,7 @@ public class JumperPathPrinterTest {
         // given
         int[][] path = createJumperPath(MAX_ROWS, MAX_COLS);
         // when
-        JumperPathPrinter.print(path);
+        HorsePathPrinter.print(path);
         // then
 
     }

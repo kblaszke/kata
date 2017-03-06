@@ -5,11 +5,11 @@ import pl.blaszak.kata.horse.Coordinates;
 /**
  * Created by kblaszke on 03.03.17.
  */
-public class JumperPathCreator {
+public class HorsePathCreator {
 
     private final Coordinates boardRange;
 
-    public JumperPathCreator(Coordinates boardRange) {
+    public HorsePathCreator(Coordinates boardRange) {
         this.boardRange = boardRange;
     }
 
