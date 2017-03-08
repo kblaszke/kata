@@ -3,9 +3,7 @@ package pl.blaszak.kata.horse.utils;
 
 import org.junit.Test;
 
-/**
- * Created by kblaszke on 03.03.17.
- */
+/* Copyright 2017 Sabre Holdings */
 
 public class HorsePathPrinterTest {
 

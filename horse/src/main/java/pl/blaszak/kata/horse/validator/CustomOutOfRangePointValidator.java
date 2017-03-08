@@ -16,12 +16,6 @@ public class CustomOutOfRangePointValidator extends Validator<Coordinates> {
 
     @Override
     boolean validate(Coordinates point) {
-        if (point.row < 0 || point.row >= maxRow) {
-            return false;
-        }
-        if ( point.col < 0 || point.col >= maxCol) {
-            return false;
-        }
-        return true;
+        return !(point.row < 0 || point.row >= maxRow) && !(point.col < 0 || point.col >= maxCol);
     }
 }

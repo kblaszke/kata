@@ -7,19 +7,13 @@ import pl.blaszak.kata.horse.validator.PointValidator;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/**
- * Created by kblaszke on 03.03.17.
- */
+/* Copyright 2017 Sabre Holdings */
 public class HorsePathCreator {
 
-    // private static Logger logger = Logger
-
-    private final Coordinates boardRange;
     private int[][] board;
     private int endStepNumber;
 
     public HorsePathCreator(Coordinates boardRange) {
-        this.boardRange = boardRange;
         board = new int[boardRange.row][boardRange.col];
         endStepNumber = boardRange.row * boardRange.col;
     }
@@ -32,9 +26,10 @@ public class HorsePathCreator {
         }
     }
 
-    private Boolean findPath(Coordinates point, int step) {
+    private boolean findPath(Coordinates point, int step) {
         step ++;
         if (step == endStepNumber) {
+            board[point.row][point.col] = step;
             return true;
         }
         List<Coordinates> possibleJumps = getPossibleJumps(point);
@@ -42,7 +37,7 @@ public class HorsePathCreator {
             for (Coordinates nextPoint : possibleJumps) {
                 board[point.row][point.col] = step;
                 Boolean pathToEnd = findPath(nextPoint, step);
-                if (pathToEnd != null && pathToEnd.booleanValue() == true) {
+                if (pathToEnd) {
                     return true;
                 } else {
                     board[point.row][point.col] = 0;

@@ -8,7 +8,7 @@ import pl.blaszak.kata.horse.Coordinates;
 public class CustomOutOfRangePointValidatorTest implements WithAssertions {
 
     @Test
-    public void shouldValidatemiddlePoint() {
+    public void shouldValidateMiddlePoint() {
         // given
         int[][] board = new int[5][5];
         CustomOutOfRangePointValidator validator = new CustomOutOfRangePointValidator(board);
