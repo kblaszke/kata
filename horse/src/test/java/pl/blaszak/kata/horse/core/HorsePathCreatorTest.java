@@ -3,6 +3,7 @@ package pl.blaszak.kata.horse.core;
 import org.assertj.core.api.WithAssertions;
 import org.junit.Test;
 import pl.blaszak.kata.horse.Coordinates;
+import pl.blaszak.kata.horse.utils.HorsePathPrinter;
 
 /**
  * Created by kblaszke on 03.03.17.
@@ -16,8 +17,9 @@ public class HorsePathCreatorTest implements WithAssertions {
         Coordinates startPoint = new Coordinates(0, 0);
         HorsePathCreator pathCreator = new HorsePathCreator(new Coordinates(5, 5));
         // when
-        Integer[][] thePath = pathCreator.findPath(startPoint);
+        int[][] thePath = pathCreator.findPath(startPoint);
         // then
         assertThat(thePath).isNotNull();
+        HorsePathPrinter.print(thePath);
     }
 }
