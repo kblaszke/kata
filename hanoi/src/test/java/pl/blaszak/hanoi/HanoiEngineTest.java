@@ -1,8 +1,8 @@
 package pl.blaszak.hanoi;
 
+import org.apache.log4j.PropertyConfigurator;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
 
 /**
  * Created by SG0945943 on 2017-04-19.

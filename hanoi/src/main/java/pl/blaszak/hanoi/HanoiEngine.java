@@ -1,5 +1,7 @@
 package pl.blaszak.hanoi;
 
+
+import org.apache.log4j.Logger;
 import pl.blaszak.hanoi.model.HanoiRingStack;
 import pl.blaszak.hanoi.model.HanoiRingStackBuilder;
 import pl.blaszak.hanoi.model.Ring;
@@ -10,7 +12,7 @@ import pl.blaszak.hanoi.model.Ring;
  */
 public class HanoiEngine {
 
-    // private static Logger LOGGER = Logger.getInstance(HanoiEngine.class);
+    private static Logger LOGGER = Logger.getLogger(HanoiEngine.class);
 
     private HanoiRingStack source;
     private HanoiRingStack destination;
@@ -36,7 +38,7 @@ public class HanoiEngine {
 
     private void moveRing(HanoiRingStack source, HanoiRingStack destination) {
         Ring ring = source.get();
-        System.out.println("Moving ring " + ring.getDia() + " from " + source.getName() + " to " + destination.getName());
+        LOGGER.info("Moving ring " + ring.getDia() + " from " + source.getName() + " to " + destination.getName());
         destination.put(ring);
     }
 
