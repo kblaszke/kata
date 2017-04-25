@@ -1,4 +1,8 @@
 rootProject.name = 'kata'
 include 'horse'
 include 'primenumbers'
+include 'eightsKings'
+include 'eightKings'
+include 'eightQueens'
+include 'hanoi'
 
