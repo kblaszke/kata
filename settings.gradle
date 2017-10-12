@@ -1,8 +1,6 @@
 rootProject.name = 'kata'
 include 'horse'
 include 'primenumbers'
-include 'eightsKings'
-include 'eightKings'
 include 'eightQueens'
 include 'hanoi'
-
+include 'medicine-dose-kata-java-master'
