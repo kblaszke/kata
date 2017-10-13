@@ -1,0 +1,23 @@
+group 'pl.blaszak'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+dependencies {
+    testCompile group: 'org.mockito', name: 'mockito-all', version: '1.10.19'
+}
+
+sourceSets {
+    main {
+        java.srcDir "src/java"
+        resources.srcDir "src/resources"
+    }
+    unitTest {
+        java.srcDir "src/test/java"
+        resources.srcDir "src/test/resources"
+    }
+}
+
+jar {
+    manifest.attributes "Main-Class": "pl.blaszak.kata.medicinedosekata.service.DoseController"
+}
