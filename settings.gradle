@@ -4,3 +4,6 @@ include 'primenumbers'
 include 'eightQueens'
 include 'hanoi'
 include 'medicine-dose-kata-java-master'
+include 'letsMakeADeal'
+include 'twoEnvelopesProblem'
+
