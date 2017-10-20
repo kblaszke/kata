@@ -6,4 +6,5 @@ include 'hanoi'
 include 'medicine-dose-kata-java-master'
 include 'letsMakeADeal'
 include 'twoEnvelopesProblem'
+include 'binarySearch'
 
