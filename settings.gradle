@@ -7,4 +7,7 @@ include 'medicine-dose-kata-java-master'
 include 'letsMakeADeal'
 include 'twoEnvelopesProblem'
 include 'binarySearch'
+include 'digitalRoot'
+include 'threeAndFive'
+include 'duplicatedCharsCounter'
 

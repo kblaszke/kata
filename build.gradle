@@ -19,7 +19,7 @@ subprojects {
 
     sourceCompatibility = 1.8
 
-    sourceSets {
+    /*sourceSets {
         main {
             java.srcDir "src/java"
             resources.srcDir "src/resources"
@@ -28,7 +28,7 @@ subprojects {
             java.srcDir "src/test/java"
             resources.srcDir "src/test/resources"
         }
-    }
+    }*/
 
     dependencies {
         compile 'log4j:log4j:1.2.17'
