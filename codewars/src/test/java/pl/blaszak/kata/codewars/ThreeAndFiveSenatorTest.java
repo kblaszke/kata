@@ -1,4 +1,4 @@
-package pl.blaszak.kata.threeAndFive;
+package pl.blaszak.kata.codewars;
 
 import org.apache.log4j.Logger;
 import org.assertj.core.api.WithAssertions;

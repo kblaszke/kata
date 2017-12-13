@@ -1,4 +1,4 @@
-package pl.blaszak.kata.duplicatedcharscounter;
+package pl.blaszak.kata.codewars;
 
 public class DuplicatedCharsCounter {
 

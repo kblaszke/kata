@@ -1,4 +1,4 @@
-package pl.blaszak.kata.threeAndFive;
+package pl.blaszak.kata.codewars;
 
 public class ThreeAndFiveSumator {
 
