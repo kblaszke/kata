@@ -14,20 +14,19 @@ public class BestTravelTest implements WithAssertions {
         // given
         List<Integer> distances = Arrays.asList(50, 55, 57, 58, 60);
         // when
-        List<List<Integer>> allCombinations = BestTravel.getAllCombinations(2, distances);
+        List<Integer> allCombinations = BestTravel.getAllCombinations(2, distances);
         // then
         assertThat(allCombinations)
                 .hasSize(10)
-                .contains(Arrays.asList(50, 55))
-                .contains(Arrays.asList(50, 57))
-                .contains(Arrays.asList(50, 58))
-                .contains(Arrays.asList(50, 60))
-                .contains(Arrays.asList(55, 57))
-                .contains(Arrays.asList(55, 58))
-                .contains(Arrays.asList(55, 60))
-                .contains(Arrays.asList(57, 58))
-                .contains(Arrays.asList(57, 60))
-                .contains(Arrays.asList(58, 60));
+                .contains(105)
+                .contains(107)
+                .contains(108)
+                .contains(110)
+                .contains(107)
+                .contains(113)
+                .contains(115)
+                .contains(117)
+                .contains(118);
     }
 
     @Test
@@ -35,20 +34,19 @@ public class BestTravelTest implements WithAssertions {
         // given
         List<Integer> distances = Arrays.asList(50, 55, 57, 58, 60);
         // when
-        List<List<Integer>> allCombinations = BestTravel.getAllCombinations(3, distances);
+        List<Integer> allCombinations = BestTravel.getAllCombinations(3, distances);
         // then
         assertThat(allCombinations)
                 .hasSize(10)
-                .contains(Arrays.asList(50,55,57))
-                .contains(Arrays.asList(50,55,58))
-                .contains(Arrays.asList(50,55,60))
-                .contains(Arrays.asList(50,57,58))
-                .contains(Arrays.asList(50,57,60))
-                .contains(Arrays.asList(50,58,60))
-                .contains(Arrays.asList(55,57,58))
-                .contains(Arrays.asList(55,57,60))
-                .contains(Arrays.asList(55,58,60))
-                .contains(Arrays.asList(57,58,60));
+                .contains(162)
+                .contains(163)
+                .contains(165)
+                .contains(167)
+                .contains(168)
+                .contains(170)
+                .contains(172)
+                .contains(173)
+                .contains(175);
     }
 
     @Test
@@ -66,7 +64,7 @@ public class BestTravelTest implements WithAssertions {
         // given
         List<Integer> distances = Arrays.asList(50, 55, 56, 57, 58);
         // when
-        Integer bestSum = BestTravel.chooseBestSum(164, 3, distances);
+        Integer bestSum = BestTravel.chooseBestSum(163, 3, distances);
         // then
         assertThat(bestSum).isEqualTo(163);
     }
